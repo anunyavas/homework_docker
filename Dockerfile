@@ -1,6 +1,7 @@
 # build
 FROM maven:3-jdk-11 as build
 WORKDIR /boxfuse-sample-java-war-hello
+COPY . ./
 RUN mvn package
 #
 # run tomcat
